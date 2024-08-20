@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Mahanadi Club Sambalpur</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Mahanadi Club</div>
+        <nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="committees.html">Committees</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <div class="category" data-images="tennisphoto1.jpg,tennisphoto2.jpg,tennis2.png,tennis3.png">
+            <img src="tennisthumb.jpg" alt="Lawn Tennis Court" class="thumb">
+            <h3>Lawn Tennis Court</h3>
+        </div>
+        <!-- Repeat similar blocks for other categories -->
+        <div class="category" data-images="bar.png,bar1.png,bar2.png">
+            <img src="barthumb.jpg" alt="BAR" class="thumb">
+            <h3>BAR</h3>
+        </div>
+        <!-- Add more categories as needed -->
+        <div class="category" data-images="ev1.png,ev2.png,ev3.png,ev4.png,ev5.png">
+            <img src="events.png" alt="BAR" class="thumb">
+            <h3>Events</h3>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="">
+            <div class="modal-caption"></div>
+        </div>
+        <div class="modal-nav">
+            <button id="prev">&lt; Prev</button>
+            <button id="next">Next &gt;</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Mahanadi Club Sambalpur. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed by Sidhartha Mishra</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>

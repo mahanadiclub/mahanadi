@@ -1,0 +1,394 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header styling */
+header {
+    background-color:rgba(255, 255, 255, 0.8);
+    color:#003366;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Hamburger Menu */
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #003366;
+    margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:#f5f5f5;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav .hamburger {
+        display: flex;
+    }
+}
+/* Hero Section */
+.hero {
+    background-image: url('club_hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: blinkText 1s infinite;
+}
+
+.hero p {
+    font-size: 24px;
+    animation: blinkText 1s infinite;
+}
+
+/* Blink Animation */
+@keyframes blinkText {
+    0% { color: black; }
+    50% { color: white; }
+    100% { color: black; }
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent light color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+    color: #333;
+}
+
+.committee {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-image: url('committee_background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Extra rounded corners inside */
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% transparency */
+}
+
+.committee h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.committee ul {
+    list-style: none;
+    padding: 0;
+}
+
+.committee ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text, .committee {
+        flex: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .committee {
+        padding-left: 0;
+    }
+}
+
+/* Facilities Section */
+.facilities {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.facilities h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.facility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.facility-item {
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.facility-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.facility-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.facilities .cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Events Section */
+.events {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* Membership Section */
+.membership {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.membership p {
+    font-size: 18px;
+}
+
+.membership .cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #FAEBD7;
+    color: #003366;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    margin-bottom: 20px;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* Committees Section */
+.committees {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height for both sections combined */
+}
+
+.committee-section {
+    flex: 1; /* Distribute space equally between h2 and h3 sections */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.h2-section {
+    background-color: #f0f8ff; /* Light background color for H2 section */
+}
+
+.h3-section {
+    background-color: #e6e6fa; /* Light background color for H3 section */
+}
+
+/* Image Section */
+.committee-image {
+    text-align: center;
+    margin: 20px 0; /* Add some space around the image */
+}
+
+.committee-image img {
+    max-width: 100%;
+    max-height: 300px; /* Set the maximum height */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+.committee-section h2, .committee-section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.committee-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+.committee-section li {
+    margin-bottom: 10px;
+}
